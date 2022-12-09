@@ -13,17 +13,6 @@ const {
   GraphQLNonNull,
 } = qraphql;
 
-var books = [
-  { name: "book 1", genre: "fantasy", id: "1", authorId: "2" },
-  { name: "book 2", genre: "fantasy", id: "2", authorId: "1" },
-  { name: "book 3", genre: "sci-fi", id: "3", authorId: "2" },
-];
-
-var authors = [
-  { name: "author 1", age: 42, id: "1" },
-  { name: "author 2", age: 44, id: "2" },
-];
-
 const BookType = new GraphQLObjectType({
   name: "Book",
   fields: () => ({
